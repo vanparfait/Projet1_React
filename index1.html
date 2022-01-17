@@ -17,14 +17,18 @@
             return (<h1>{ titre.toUpperCase() }</h1>);
         }
         function Card() {
-            const lierre = "lierre"
-            const bouquet = "bouquet"
-            const fleur = "fleur"
-            return (<ul>
-                        <li>{ lierre } : 8$</li>
-                        <li>{ bouquet } : 10$</li>
-                        <li>{ fleur } : 15$</li>
-                   </ul>)     
+            const lierre = 8
+            const bouquet = 10
+            const fleur = 15
+            return (<div><ul>
+                            <li>Lierre : { lierre }$</li>
+                            <li>Bouquet : { bouquet }$</li>
+                            <li>Fleur : { fleur }$</li>
+                        </ul>
+                   la somme est : { lierre + bouquet + fleur }$
+                    </div>
+                   )  
+
         }
         ReactDOM.render(<div><Banner/><Card/></div>, document.getElementById('root'));
     </script>
